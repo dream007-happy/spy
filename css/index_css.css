@@ -1,0 +1,51 @@
+@charset "utf-8";
+.bg {
+  background-image: url("../images/spybg.png") !important;
+}
+.nav-link:hover {
+  color: #83DEFF;
+}
+.text {
+  font-size: 24px !important;
+}
+.btn {}
+img.img-hover {
+  cursor: pointer !important; /* 强制应用指针样式 */
+  transition: opacity 0.3s ease !important; /* 强制过渡效果 */
+}
+.img-hover:hover {
+  opacity: 0.5; /* 透明度調整，1 是完全不透明，0 是完全透明 */
+}
+.position-relativer:hover img {
+  webkit-clip-path: inset(3rem);
+  clip-path: inset(2rem);
+}
+
+.hover-show {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .hover-show {
+    opacity: 1;
+}
+.spyicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; /* 將游標變為手形，表示可點擊 */
+	width: 50px; 
+    height: 50px;
+}
+h1{
+	text-align: center;
+	}
+.card {
+    width: 100% !important; /* 強制寬度 */
+}
